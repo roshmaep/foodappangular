@@ -10,6 +10,7 @@ import { PaymentComponent } from './payment/payment.component';
 import { OrderComponent } from './order/order.component';
 import { FeedbackComponent } from './feedback/feedback.component';
 import { RouterModule, Routes } from '@angular/router';
+import { NavbarComponent } from './navbar/navbar.component';
 
 const myRoute:Routes=[
   {
@@ -47,7 +48,8 @@ const myRoute:Routes=[
     RegistrationComponent,
     PaymentComponent,
     OrderComponent,
-    FeedbackComponent
+    FeedbackComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
