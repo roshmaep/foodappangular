@@ -9,6 +9,35 @@ import { RegistrationComponent } from './registration/registration.component';
 import { PaymentComponent } from './payment/payment.component';
 import { OrderComponent } from './order/order.component';
 import { FeedbackComponent } from './feedback/feedback.component';
+import { RouterModule, Routes } from '@angular/router';
+
+const myRoute:Routes=[
+  {
+    path:"",
+    component:IndexComponent
+  },
+  {
+    path:"login",
+    component:LoginComponent
+  },
+  {
+    path:"registration",
+    component:RegistrationComponent
+  },
+  {
+    path:"payment",
+    component:PaymentComponent
+  },
+  {
+    path:"order",
+    component:OrderComponent
+  },
+  {
+    path:"feedback",
+    component:FeedbackComponent
+  }
+]
+  
 
 @NgModule({
   declarations: [
@@ -22,7 +51,9 @@ import { FeedbackComponent } from './feedback/feedback.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    RouterModule.forRoot(myRoute)
+
   ],
   providers: [],
   bootstrap: [AppComponent]
