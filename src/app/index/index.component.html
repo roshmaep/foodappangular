@@ -1,131 +1,24 @@
 <app-navbar></app-navbar>
 <div class="container">
-    <div class="row">
-        <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
-            <div class="row g -3">
-                <div class="col col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 col-xxl-3">
-                    
-                    <div class="card">
-                        <img  height="200px"src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDMUI0cEeMGcIqVtGXmbCprLGtLFYO1zmuuIaa0c3xmDJpKqa-EYQT38VwfItH_TOe1vk&usqp=CAU" class="card-img-top" alt="...">
-                        <div class="card-body">
-                          <h5 class="card-title">PORATTA AND BEEF</h5>
-                          <p class="card-text">120</p>
-                          <a href="order.html" class="btn btn-primary">ORDER NOW</a>
-                        </div>
+  <div class="row">
+      <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+          <div class="row g-3">
+              <div class="col col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 col-xl-3 col-xxl-3" *ngFor="let i of food">
+      
+                  <div class="card">
+                      <img  height="200px"src="{{i.image}}" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">{{i.name}}</h5>
+                        <p class="card-text">{{i.price}}</p>
+                        <p class="card-text">{{i.buy}}</p>
+
                       </div>
-                
-                
-                </div>
-                <div class="col col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 col-xxl-3">
-                
-                    <div class="card">
-                        <img  height="200px"src="https://www.intermiles.com/_next/image?url=https://www.intermilesresources.com/iwov-resources/images/blog/top-10-cuisine-you-should-try-in-kerala/dosa-ghee-roast-with-kerala-style-sambar-250x250.jpg&w=640&q=75" class="card-img-top" alt="...">
-                        <div class="card-body">
-                          <h5 class="card-title">MASALA DHOSA</h5>
-                          <p class="card-text">100</p>
-                          <a href="order.html" class="btn btn-primary">ORDER NOW</a>
-                        </div>
-                      </div>
-                
-
-                </div>
-                <div class="col col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 col-xxl-3">
-                    <div class="card">
-                        <img  height="200px"src="https://img.onmanorama.com/content/dam/mm/en/food/in-season/Ramzan/Images/hyderabadi-dum-biryani.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                          <h5 class="card-title">BIRIYANI</h5>
-                          <p class="card-text">120</p>
-                          <a routerLink="/order" class="btn btn-primary">ORDER NOW</a>
-                        </div>
-                      </div>                
-                
-                
-                </div>
-                <div class="col col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 col-xxl-3">
-                    <div class="card">
-                        <img  height="200px"src="https://recipes.timesofindia.com/thumb/75581339.cms?width=1200&height=900" class="card-img-top" alt="...">
-                        <div class="card-body">
-                          <h5 class="card-title">CHICKEN FRIED RICE</h5>
-                          <p class="card-text">150</p>
-                          <a  routerLink="/order" class="btn btn-primary">ORDER NOW</a>
-                        </div>
-                      </div>   
-                    
-                </div>
-                <div class="col col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 col-xxl-3">
-
-                    <div class="card">
-                        <img  height="200px"src="https://i.ytimg.com/vi/WBXgmNkyMz4/maxresdefault.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                          <h5 class="card-title">KUZHI MADHI RICE</h5>
-                          <p class="card-text">350</p>
-                          <a routerLink="/order" class="btn btn-primary">ORDER NOW</a>
-                        </div>
-                      </div>
-
-                </div>
-                <div class="col col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 col-xxl-3">
-
-
-                    <div class="card">
-                        <img  height="200px"src="https://img.onmanorama.com/content/dam/mm/en/food/recipe/images/2021/2/14/alfaham.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                          <h5 class="card-title">ALFAHAM</h5>
-                          <p class="card-text">300</p>
-                          <a routerLink="/order" class="btn btn-primary">ORDER NOW</a>
-                        </div>
-                      </div>
-
-                </div>
-                <div class="col col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 col-xxl-3">
-
-                    <div class="card">
-                        <img  height="200px"src="http://myheartbeets.com/wp-content/uploads/2014/05/kadai-chicken-recipe.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                          <h5 class="card-title">KADAI CHICKEN</h5>
-                          <p class="card-text">200</p>
-                          <a routerLink="/order" class="btn btn-primary">ORDER NOW</a>
-                        </div>
-                      </div>
-
-                </div>
-                <div class="col col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 col-xxl-3">
-
-                        <div class="card">
-                        <img  height="200px"src="https://i0.wp.com/www.sujiscooking.com/wp-content/uploads/2014/11/quailkada-fry.1024x1024.jpg?fit=1024%2C681&ssl=1" class="card-img-top" alt="...">
-                        <div class="card-body">
-                          <h5 class="card-title">KADA FRY</h5>
-                          <p class="card-text">150</p>
-                          <a routerLink="/order" class="btn btn-primary">ORDER NOW</a>
-                        </div>
                     </div>
-                </div>
-
-                <div class="col col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 col-xxl-3">
-
-                    <div class="card">
-                        <img  height="200px"src="https://myfoodstory.com/wp-content/uploads/2021/07/restaurant-style-paneer-butter-masala-2.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                          <h5 class="card-title">PANEER BUTTER MASALA</h5>
-                          <p class="card-text">150</p>
-                          <a routerLink="/order" class="btn btn-primary">ODER NOW</a>
-                        </div>
-                      </div>
-
-                </div>
-                <div class="col col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 col-xxl-3">
-
-                    <div class="card">
-                        <img  height="200px"src="https://thewoksoflife.com/wp-content/uploads/2016/07/grilled-tandoori-chicken-12.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                          <h5 class="card-title">TANDOORI CHICKEN</h5>
-                          <p class="card-text">120</p>
-                          <a routerLink="/order" class="btn btn-primary">ODER NOW</a>
-                        </div>
-                      </div>
-
-                </div>
-            </div>
-        </div>
+                  </div>
+              
+             
     </div>
   </div>
+</div>
+</div>
+

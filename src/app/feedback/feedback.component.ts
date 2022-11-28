@@ -7,4 +7,12 @@ import { Component } from '@angular/core';
 })
 export class FeedbackComponent {
 
+  feedback=""
+
+  readValues=()=>
+{
+  let data:any={"feedback":this.feedback}
+
+
+}
 }

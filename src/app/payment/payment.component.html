@@ -7,36 +7,36 @@
                     <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xl-6 col-xxl-6">
 
                         <label for="" class="form-label">Holder name</label>
-                        <input type="text" class="form-control">
+                        <input name="hname" [(ngModel)]="hname" type="text" class="form-control">
                     </div>
                     
                     <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xl-12 col-xxl-12">
 
                         <label for="" class="form-label">Card Number</label>
-                        <input type="text" class="form-control">
+                        <input name="cno" [(ngModel)]="cno" type="text" class="form-control">
 
                     </div>
             
                     <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xl-6 col-xxl-6">
 
                         <label for="" class="form-label">Validity</label>
-                        <input type="text" class="form-control">
+                        <input name="validity" [(ngModel)]="validity" type="text" class="form-control">
                     </div>
                     <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xl-6 col-xxl-6">
 
                         <label for="" class="form-label">CVV</label>
-                        <input type="text" class="form-control">
+                        <input  name="cvv" [(ngModel)]="cvv"type="text" class="form-control">
                     </div>
                     <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xl-6 col-xxl-6">
 
                         <label for="" class="form-label">Delivery Address</label>
-                        <textarea name="" id=""  rows="5" class="form-control"></textarea>
+                        <textarea name="daddress" [(ngModel)]="daddress" id=""  rows="5" class="form-control"></textarea>
 
                     </div>
                     
                     
                     <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xl-12 col-xxl-12 text-center">
-                    <button class="btn btn-success">Pay Now</button>
+                    <button (click)="readValues()" class="btn btn-success">Pay Now</button>
                     </div>
                    
                 </div>

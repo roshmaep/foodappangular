@@ -7,4 +7,12 @@ import { Component } from '@angular/core';
 })
 export class OrderComponent {
 
+  foodc=""
+  foodI=""
+  quantity=""
+
+  readValues=()=>
+{
+  let data:any={"foodc":this.foodc,"foodI":this.foodI,"quantity":this.quantity}
+}
 }
